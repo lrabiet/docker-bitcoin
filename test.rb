@@ -4,7 +4,7 @@ require "./update"
 
 def build_image(branch, version, opts)
   dir = File.join(branch, version)
-  tag = "bitcoin-#{branch}:#{version}"
+  tag = "lrabiet/bitcoin:#{branch}-#{version}"
 
   # some clients self-report a different formatted version
   # so we allow this to be overridden in versions.yml
